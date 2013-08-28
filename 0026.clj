@@ -22,3 +22,11 @@
         (+
           (last (fib (- n 1)))
           (last (fib (- n 2))))))))
+
+(fn fib [n]
+  (case n
+    1 '(1)
+    2 '(1 1)
+    (concat
+      (fib (dec n))
+      (list (apply + (take-last 2 (fib (dec n))))))))
