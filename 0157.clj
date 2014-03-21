@@ -1,1 +1,1 @@
-map-indexed (fn [i x] [x i])
+map-indexed #(vector %2 %1)
