@@ -1,1 +1,1 @@
-map-indexed #([%2 %1])
+map-indexed (fn [i x] [x i])
